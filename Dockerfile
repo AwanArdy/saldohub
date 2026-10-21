@@ -1,34 +1,36 @@
 FROM php:8.2-apache
 
-# Install dependencies, ekstensi SQLite, dan tool yang dibutuhkan Composer
+# 1. Install system dependencies & ekstensi PHP yang dibutuhkan CI4 + SQLite
 RUN apt-get update && apt-get install -y \
     libsqlite3-dev \
+    libicu-dev \
     zip \
     unzip \
     git \
-    && docker-php-ext-install pdo pdo_sqlite
+    && docker-php-ext-install pdo pdo_sqlite intl
 
-# Copy Composer dari image resmi Composer
+# 2. Copy Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Enable Apache mod_rewrite
-RUN a2enmod rewrite
+# 3. Setting environment agar Composer tidak dibatasi memori
+ENV COMPOSER_ALLOW_SUPERUSER=1
+ENV COMPOSER_MEMORY_LIMIT=-1
 
-# Ubah Document Root Apache langsung ke folder /public milik CI4
+# 4. Enable Apache mod_rewrite & set document root
+RUN a2enmod rewrite
 ENV APACHE_DOCUMENT_ROOT /var/www/html/public
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/conf-available/*.conf
 
-# Set working directory
 WORKDIR /var/www/html
 
-# Copy semua file proyek ke dalam container
+# 5. Copy file proyek
 COPY . .
 
-# Jalankan composer install untuk mengunduh folder vendor/
-RUN composer install --no-dev --optimize-autoloader
+# 6. Jalankan composer install tanpa autoloader berat jika RAM terbatas
+RUN composer install --no-dev --no-scripts
 
-# Set permission folder writable agar SQLite dan cache bisa ditulis
+# 7. Set permission folder writable
 RUN chown -R www-data:www-data /var/www/html/writable
 
 EXPOSE 80
