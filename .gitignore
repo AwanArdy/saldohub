@@ -63,7 +63,7 @@ Vagrantfile
 /writable/debugbar/*
 !/writable/debugbar/index.html
 
-/writable/*.sqlite
+# /writable/*.sqlite
 /writable/*.sqlite-journal
 /writable/*.sqlite-wal
 /writable/*.sqlite-shm
