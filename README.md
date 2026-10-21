@@ -1,6 +1,4 @@
-# SaldoKita — Jasa Top Up & Bayar Online PayPal
-
-Clone fungsional website layanan transaksi PayPal yang dibangun dengan **CodeIgniter 4** (backend) dan **jQuery 3 + Bootstrap 5** (frontend).
+# saldohub
 
 Fitur utama:
 
