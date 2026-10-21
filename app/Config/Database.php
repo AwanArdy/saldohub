@@ -29,7 +29,7 @@ class Database extends Config
         'hostname'     => 'localhost',
         'username'     => '',
         'password'     => '',
-        'database'     => '',
+        'database'     => WRITEPATH . 'saldohub.sqlite',
         'DBDriver'     => 'SQLite3',
         'DBPrefix'     => '',
         'pConnect'     => false,
