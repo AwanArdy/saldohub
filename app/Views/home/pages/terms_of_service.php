@@ -2,7 +2,7 @@
 
 <h5 class="fw-bold mb-3">1. Layanan</h5>
 <p class="text-muted">
-    SaldoKita menyediakan dua jasa: pembelian saldo PayPal dan pembayaran tagihan/item online memakai PayPal.
+    SaldoHub menyediakan dua jasa: pembelian saldo PayPal dan pembayaran tagihan/item online memakai PayPal.
     Kami tidak bertransaksi dengan cara beli-membeli saldo dari pihak ketiga sepihak.
 </p>
 

@@ -16,7 +16,7 @@ $whatsappUrl = 'https://wa.me/' . ($settings['whatsapp'] ?? '6281234567890');
             <div>
                 <span class="eyebrow-pill mb-2">Dokumentasi Legal</span>
                 <h1 class="display-6 fw-bold mb-1"><?= esc($titles[$slug] ?? ucfirst($slug)) ?></h1>
-                <p class="text-muted small mb-0">Informasi resmi seputar hak, ketentuan, dan prosedur operasional layanan SaldoKita.</p>
+                <p class="text-muted small mb-0">Informasi resmi seputar hak, ketentuan, dan prosedur operasional layanan SaldoHub.</p>
             </div>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0">

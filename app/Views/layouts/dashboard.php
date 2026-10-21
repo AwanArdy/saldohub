@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= isset($title) ? esc($title) . ' — SaldoKita' : 'Dashboard — SaldoKita Digital FX & Escrow' ?></title>
+    <title><?= isset($title) ? esc($title) . ' — SaldoHub' : 'Dashboard — SaldoHub Digital FX & Escrow' ?></title>
     
     <!-- Bespoke Financial Favicon SVG -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><rect width='48' height='48' rx='12' fill='%231d4ed8'/><path d='M14 17h20M14 24h14M14 31h18' stroke='%23ffffff' stroke-width='3.5' stroke-linecap='round'/><circle cx='34' cy='24' r='4' fill='%23fbbf24'/></svg>">
@@ -30,7 +30,7 @@
                 </svg>
             </div>
             <div>
-                <div class="brand-text">Saldo<span>Kita</span></div>
+                <div class="brand-text">Saldo<span>Hub</span></div>
                 <span class="brand-submark">Digital FX Desk</span>
             </div>
         </a>
@@ -133,7 +133,7 @@
                 </svg>
             </div>
             <div>
-                <div class="brand-text">Saldo<span>Kita</span></div>
+                <div class="brand-text">Saldo<span>Hub</span></div>
             </div>
         </a>
         <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>

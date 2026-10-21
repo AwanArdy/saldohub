@@ -7,7 +7,7 @@
                 <table role="presentation" width="560" cellpadding="0" cellspacing="0" style="background:#fff;border-radius:10px;padding:28px;">
                     <tr>
                         <td style="padding-bottom:18px;border-bottom:2px solid #eef1f6;">
-                            <h2 style="color:#155ee2;margin:0;font-size:20px;">SaldoKita</h2>
+                            <h2 style="color:#155ee2;margin:0;font-size:20px;">SaldoHub</h2>
                         </td>
                     </tr>
                     <tr><td style="padding:18px 0 6px;">
@@ -45,7 +45,7 @@
                     <tr><td style="padding:12px 0;border-top:1px solid #eef1f6;">
                         <p style="color:#9ca3af;font-size:12px;margin:0;">
                             Bila ada kendala, reply email ini atau hubungi kami dengan menyebut nomor order <strong>#<?= $invNo ?></strong>.<br>
-                            Email otomatis &mdash; SaldoKita. <?= date('Y') ?>
+                            Email otomatis &mdash; SaldoHub. <?= date('Y') ?>
                         </p>
                     </td></tr>
                 </table>

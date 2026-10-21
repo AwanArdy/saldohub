@@ -11,7 +11,7 @@
                 </svg>
             </div>
             <h3 class="fw-bold mb-1">Registrasi Akun</h3>
-            <p class="text-muted small mb-0">Buat akun SaldoKita untuk kemudahan bertransaksi</p>
+            <p class="text-muted small mb-0">Buat akun SaldoHub untuk kemudahan bertransaksi</p>
         </div>
 
         <?= view('partials/flash') ?>

@@ -6,7 +6,7 @@
         <div class="d-flex justify-content-between align-items-center mb-3">
             <div>
                 <h5 class="fw-bold mb-1 text-ink">Daftar Pelanggan Terdaftar</h5>
-                <p class="text-muted small mb-0">Total akun pengguna terdaftar di platform SaldoKita</p>
+                <p class="text-muted small mb-0">Total akun pengguna terdaftar di platform SaldoHub</p>
             </div>
         </div>
 

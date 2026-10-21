@@ -20,7 +20,7 @@ class AdminSeed extends Seeder
         }
 
         $this->db->table('users')->insert([
-            'name'       => 'Admin SaldoKita',
+            'name'       => 'Admin SaldoHub',
             'email'      => 'admin@saldohub.test',
             'password'   => password_hash('admin12345', PASSWORD_DEFAULT),
             'role'       => 'admin',

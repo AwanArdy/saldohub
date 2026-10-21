@@ -10,7 +10,7 @@
                         </svg>
                     </div>
                     <div>
-                        <div class="brand-text text-white">Saldo<span>Kita</span></div>
+                        <div class="brand-text text-white">Saldo<span>Hub</span></div>
                         <span class="brand-submark" style="color: #64748b;">Digital FX &amp; Escrow</span>
                     </div>
                 </a>
@@ -52,7 +52,7 @@
                     </li>
                     <li class="d-flex align-items-center gap-2 mb-2">
                         <i class="bi bi-envelope text-brand"></i>
-                        <span>halo@saldokita.test</span>
+                        <span>halo@saldohub.test</span>
                     </li>
                     <li class="d-flex align-items-start gap-2 mb-2">
                         <i class="bi bi-clock text-warning mt-1"></i>
@@ -69,7 +69,7 @@
 
         <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 small text-muted">
             <div>
-                &copy; <?= date('Y') ?> SaldoKita. Seluruh hak cipta dilindungi. Transaksi aman terlindungi garansi.
+                &copy; <?= date('Y') ?> SaldoHub. Seluruh hak cipta dilindungi. Transaksi aman terlindungi garansi.
             </div>
             <div class="d-flex align-items-center gap-3">
                 <span class="text-white-50 small">Metode Transfer:</span>

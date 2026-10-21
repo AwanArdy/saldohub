@@ -4,7 +4,7 @@
 $rate = (int) ($settings['rate'] ?? 18450);
 $minTopup = (int) ($settings['min_topup_usd'] ?? 30);
 $minPay = (int) ($settings['min_pay_usd'] ?? 5);
-$waText = rawurlencode("Halo SaldoKita, saya ingin berkonsultasi mengenai transaksi PayPal. Kurs hari ini: Rp " . number_format($rate, 0, ',', '.') . ".");
+$waText = rawurlencode("Halo SaldoHub, saya ingin berkonsultasi mengenai transaksi PayPal. Kurs hari ini: Rp " . number_format($rate, 0, ',', '.') . ".");
 $whatsappUrl = 'https://wa.me/' . ($settings['whatsapp'] ?? '6281234567890') . '?' . $waText;
 ?>
 
@@ -189,7 +189,7 @@ $whatsappUrl = 'https://wa.me/' . ($settings['whatsapp'] ?? '6281234567890') . '
                     </div>
                     <h3 class="fw-bold text-white mb-2">Komitmen Keamanan &amp; Integritas Saldo</h3>
                     <p class="text-white-50 mb-0 small" style="max-width: 600px;">
-                        Setiap rupiah dan dollar yang berputar di SaldoKita tunduk pada prosedur penjaminan ketat guna melindungi akun para pelanggan dari risiko penangguhan sistem PayPal.
+                        Setiap rupiah dan dollar yang berputar di SaldoHub tunduk pada prosedur penjaminan ketat guna melindungi akun para pelanggan dari risiko penangguhan sistem PayPal.
                     </p>
                 </div>
                 <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
@@ -253,7 +253,7 @@ $whatsappUrl = 'https://wa.me/' . ($settings['whatsapp'] ?? '6281234567890') . '
             <span class="eyebrow-pill mb-2">Simulasi &amp; Tata Cara</span>
             <h2 class="display-6 fw-bold">Hitung Estimasi &amp; Alur Order</h2>
             <p class="text-muted mx-auto" style="max-width: 520px;">
-                Kalkulasi nilai transaksi secara transparan dan pelajari empat langkah praktis order di SaldoKita.
+                Kalkulasi nilai transaksi secara transparan dan pelajari empat langkah praktis order di SaldoHub.
             </p>
 
             <ul class="nav sim-nav-pills mt-4 justify-content-center" role="tablist">
@@ -324,7 +324,7 @@ $whatsappUrl = 'https://wa.me/' . ($settings['whatsapp'] ?? '6281234567890') . '
                             $stepsPay = [
                                 ['Siapkan Tautan Produk', 'Salin tautan atau detail invoice barang/jasa dari website luar negeri yang ingin dibeli.', 'bi-link-45deg'],
                                 ['Ajukan Permintaan Order', 'Isi form order jasa bayar dengan link produk serta total nominal dalam USD.', 'bi-file-earmark-plus'],
-                                ['Transfer Pembayaran', 'Transfer nilai belanja + ongkos penanganan resmi ke rekening lokal SaldoKita.', 'bi-cash-coin'],
+                                ['Transfer Pembayaran', 'Transfer nilai belanja + ongkos penanganan resmi ke rekening lokal SaldoHub.', 'bi-cash-coin'],
                                 ['Order Selesai Dilunasi', 'Kami membayarkan tagihan langsung di merchant luar negeri & mengunggah bukti pelunasan.', 'bi-receipt-cutoff'],
                             ];
                             for ($i = 0; $i < count($stepsPay); $i++) : [$t, $d, $ico] = $stepsPay[$i]; ?>
@@ -406,10 +406,10 @@ $whatsappUrl = 'https://wa.me/' . ($settings['whatsapp'] ?? '6281234567890') . '
                 <div class="accordion" id="faqAccordion">
                     <?php
                     $faq = [
-                        ['Apa itu SaldoKita?', 'SaldoKita adalah platform perantara transaksi PayPal resmi di Indonesia. Kami menyediakan dua fasilitas: pembelian saldo PayPal langsung ke rekening akun Anda, serta jasa pembayaran tagihan/checkout barang dari merchant luar negeri tanpa membutuhkan kartu kredit.'],
+                        ['Apa itu SaldoHub?', 'SaldoHub adalah platform perantara transaksi PayPal resmi di Indonesia. Kami menyediakan dua fasilitas: pembelian saldo PayPal langsung ke rekening akun Anda, serta jasa pembayaran tagihan/checkout barang dari merchant luar negeri tanpa membutuhkan kartu kredit.'],
                         ['Bagaimana alur pembayaran transaksinya?', 'Sangat mudah. Anda mendaftar akun, melakukan simulasi order, lalu mentransfer nilai rupiah ke rekening bank resmi kami (BCA, Mandiri, BNI, BRI, BSI, atau QRIS). Setelah transfer terverifikasi, order Anda langsung diproses.'],
                         ['Berapa lama estimasi saldo masuk ke akun PayPal saya?', 'Pada jam operasional normal (Senin–Minggu), order Anda umumnya tuntas diproses dalam 15 hingga 45 menit setelah konfirmasi pembayaran diterima. Batas toleransi maksimal adalah 2 jam kerja.'],
-                        ['Apakah akun PayPal saya harus berstatus terverifikasi?', 'Akun PayPal yang belum terverifikasi kartu kredit tetap dapat menerima saldo dari SaldoKita. Namun, pastikan email akun Anda telah dikonfirmasi di platform PayPal.'],
+                        ['Apakah akun PayPal saya harus berstatus terverifikasi?', 'Akun PayPal yang belum terverifikasi kartu kredit tetap dapat menerima saldo dari SaldoHub. Namun, pastikan email akun Anda telah dikonfirmasi di platform PayPal.'],
                         ['Apakah aman dan apakah ada bukti transaksi resmi?', 'Sangat aman. Setiap transaksi kami sertai dengan Invoice PDF resmi serta screenshot bukti pengiriman langsung dari dashboard admin kami yang dapat Anda unduh kapan saja.'],
                         ['Apakah ada biaya admin terselubung?', 'Sama sekali tidak ada. Untuk Top Up Saldo, biaya admin adalah Rp 0 (gratis). Untuk Jasa Bayar, biaya jasa penanganan telah tercantum transparan pada hasil kalkulator sebelum Anda menyetujui transaksi.'],
                     ];
@@ -441,12 +441,12 @@ $whatsappUrl = 'https://wa.me/' . ($settings['whatsapp'] ?? '6281234567890') . '
             <div class="col-lg-9 col-xl-8">
                 <div class="article-container">
                     <span class="eyebrow-pill mb-2">Panduan Finansial</span>
-                    <h2>SaldoKita — Solusi Transaksi Digital Tanpa Hambatan</h2>
+                    <h2>SaldoHub — Solusi Transaksi Digital Tanpa Hambatan</h2>
                     <p>
                         PayPal adalah metode pembayaran paling universal di ekosistem digital saat ini. Bagi para freelancer, desainer, pebisnis online, dan penikmat konten yang berlangganan tools luar negeri seperti Canva Pro, Envato, Zoom, ChatGPT Plus, hingga Midjourney, PayPal merupakan gerbang utama pelunasan tagihan.
                     </p>
                     <p>
-                        Kendala utama di Indonesia adalah banyak pengguna belum memiliki kartu kredit internasional atau mengalami penolakan transaksi debit online oleh sistem perbankan. SaldoKita hadir menjembatani kendala tersebut: Anda dapat <strong>mengisi saldo PayPal</strong> atau memanfaatkan <strong>jasa bayar merchant</strong> cukup dengan transfer bank lokal atau QRIS.
+                        Kendala utama di Indonesia adalah banyak pengguna belum memiliki kartu kredit internasional atau mengalami penolakan transaksi debit online oleh sistem perbankan. SaldoHub hadir menjembatani kendala tersebut: Anda dapat <strong>mengisi saldo PayPal</strong> atau memanfaatkan <strong>jasa bayar merchant</strong> cukup dengan transfer bank lokal atau QRIS.
                     </p>
 
                     <h3>Prinsip Keamanan Finansial Kami</h3>

@@ -40,9 +40,9 @@ $statusLabels = [
 <body>
     <div class="head">
         <div class="brand">
-            <h1>SaldoKita</h1>
-            <small>Jasa transaksi PayPal &mdash; saldokita.test</small><br>
-            <small>halo@saldokita.test</small>
+            <h1>SaldoHub</h1>
+            <small>Jasa transaksi PayPal &mdash; saldohub.test</small><br>
+            <small>halo@saldohub.test</small>
         </div>
         <div class="meta">
             <div class="inv-no">INVOICE #<?= $invNo ?></div>
@@ -126,7 +126,7 @@ $statusLabels = [
     </div>
 
     <div class="footer">
-        Dokumen ini dibuat otomatis oleh sistem SaldoKita dan sah tanpa tanda tangan basah. &copy; <?= date('Y') ?> SaldoKita.
+        Dokumen ini dibuat otomatis oleh sistem SaldoHub dan sah tanpa tanda tangan basah. &copy; <?= date('Y') ?> SaldoHub.
     </div>
 </body>
 </html>

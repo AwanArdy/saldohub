@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= isset($title) ? esc($title) . ' — SaldoKita' : 'SaldoKita — Jasa Top Up & Bayar Online PayPal Terpercaya di Indonesia' ?></title>
+    <title><?= isset($title) ? esc($title) . ' — SaldoHub' : 'SaldoHub — Jasa Top Up & Bayar Online PayPal Terpercaya di Indonesia' ?></title>
     <meta name="description" content="<?= isset($description) ? esc($description) : 'Layanan top up saldo PayPal dan jasa checkout belanja luar negeri tanpa kartu kredit. Kurs transparan, proses instan, dan 100% bergaransi resmi.' ?>">
     
     <!-- Bespoke Financial Favicon SVG -->

@@ -3,7 +3,7 @@
 <?php
 $rate = $settings['rate'] ?? 18450;
 $waNumber = preg_replace('/[^0-9]/', '', $settings['whatsapp'] ?? '6281234567890');
-$waText = rawurlencode("Halo SaldoKita, saya membutuhkan bantuan seputar transaksi PayPal.");
+$waText = rawurlencode("Halo SaldoHub, saya membutuhkan bantuan seputar transaksi PayPal.");
 $whatsappUrl = 'https://wa.me/' . $waNumber . '?' . $waText;
 ?>
 
@@ -13,7 +13,7 @@ $whatsappUrl = 'https://wa.me/' . $waNumber . '?' . $waText;
         <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
             <div>
                 <span class="eyebrow-pill mb-2">Bantuan Pelanggan</span>
-                <h1 class="display-6 fw-bold mb-1">Hubungi SaldoKita</h1>
+                <h1 class="display-6 fw-bold mb-1">Hubungi SaldoHub</h1>
                 <p class="text-muted small mb-0">Tim kami siap memberikan panduan dan menjawab pertanyaan seputar transaksi Anda.</p>
             </div>
             <nav aria-label="breadcrumb">
@@ -53,7 +53,7 @@ $whatsappUrl = 'https://wa.me/' . $waNumber . '?' . $waText;
                     </div>
                     <div>
                         <h6 class="fw-bold mb-1 text-ink">Surat Elektronik (Email)</h6>
-                        <p class="text-muted small mb-0">halo@saldokita.test</p>
+                        <p class="text-muted small mb-0">halo@saldohub.test</p>
                     </div>
                 </div>
 

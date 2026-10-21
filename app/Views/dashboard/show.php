@@ -10,7 +10,7 @@ $statusMap = [
 ];
 [$class, $label] = $statusMap[$order['status']] ?? ['badge-pending', $order['status']];
 $waNumber = preg_replace('/[^0-9]/', '', $settings['whatsapp'] ?? '6281234567890');
-$waText = rawurlencode("Halo SaldoKita, saya ingin konfirmasi pembayaran untuk Order #{$order['id']} sebesar Rp " . $fmt((float) $order['total_rupiah']) . ".");
+$waText = rawurlencode("Halo SaldoHub, saya ingin konfirmasi pembayaran untuk Order #{$order['id']} sebesar Rp " . $fmt((float) $order['total_rupiah']) . ".");
 $whatsappUrl = 'https://wa.me/' . $waNumber . '?' . $waText;
 ?>
 

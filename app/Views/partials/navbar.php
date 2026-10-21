@@ -8,7 +8,7 @@
                 </svg>
             </div>
             <div>
-                <div class="brand-text">Saldo<span>Kita</span></div>
+                <div class="brand-text">Saldo<span>Hub</span></div>
                 <span class="brand-submark">Digital FX &amp; Escrow</span>
             </div>
         </a>

@@ -3,7 +3,7 @@
 <?php
 $rate = (int) ($settings['rate'] ?? 18450);
 $minTopup = (int) ($settings['min_topup_usd'] ?? 30);
-$waText = rawurlencode("Halo SaldoKita, saya ingin top up saldo PayPal senilai US$ " . $minTopup . " dengan kurs Rp " . number_format($rate, 0, ',', '.') . ".");
+$waText = rawurlencode("Halo SaldoHub, saya ingin top up saldo PayPal senilai US$ " . $minTopup . " dengan kurs Rp " . number_format($rate, 0, ',', '.') . ".");
 $whatsappUrl = 'https://wa.me/' . ($settings['whatsapp'] ?? '6281234567890') . '?' . $waText;
 ?>
 
@@ -34,7 +34,7 @@ $whatsappUrl = 'https://wa.me/' . ($settings['whatsapp'] ?? '6281234567890') . '
             <div class="card border-0 shadow-sm p-4 p-md-5 rounded-4 h-100">
                 <h3 class="fw-bold mb-3">Isi Saldo PayPal Tanpa Kartu Kredit</h3>
                 <p class="text-muted leading-relaxed">
-                    Layanan pengisian saldo PayPal dari SaldoKita dirancang untuk memenuhi kebutuhan pembayaran digital secara mandiri. Cukup lakukan <strong>transfer melalui bank lokal atau QRIS</strong>, saldo dollar akan kami kirimkan langsung ke email akun PayPal Anda.
+                    Layanan pengisian saldo PayPal dari SaldoHub dirancang untuk memenuhi kebutuhan pembayaran digital secara mandiri. Cukup lakukan <strong>transfer melalui bank lokal atau QRIS</strong>, saldo dollar akan kami kirimkan langsung ke email akun PayPal Anda.
                 </p>
                 <p class="text-muted leading-relaxed">
                     Kami menerapkan <strong>kurs flat yang bersaing</strong> tanpa potongan tersembunyi. Seluruh saldo dijamin legal, bersumber dari pendapatan kontrak pekerjaan resmi, dan dilengkapi garansi dana masuk.
